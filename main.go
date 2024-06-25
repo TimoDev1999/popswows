@@ -15,8 +15,8 @@ const (
 	host     = "localhost"
 	port     = 5432
 	user     = "postgres"
-	password = "your_password"
-	dbname   = "your_dbname"
+	password = "Fyfcnfcbz11"
+	dbname   = "postgres"
 )
 
 func main() {
@@ -57,7 +57,7 @@ func main() {
 
 	population := doc.Find("div#cp1").Text()
 	if population == "" {
-		log.Fatal("Не удалось найти элемент с численностью населения")
+		log.Fatal("Не удалось найти фрагмент с численностью населения")
 	}
 
 	fmt.Println("Численность населения Земли:", population)
@@ -74,5 +74,3 @@ func main() {
 
 	fmt.Println("Данные успешно вставлены в базу данных!")
 }
-
-//
